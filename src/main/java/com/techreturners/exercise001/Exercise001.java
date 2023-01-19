@@ -11,8 +11,7 @@ public class Exercise001 {
     }
 
     public String generateInitials(String firstName, String lastName) {
-
-        //return String.valueOf(firstName.charAt(0)+"."+lastName.charAt(0));
+        
         return firstName.substring(0, 1) + "." + lastName.substring(0, 1);
 
     }
@@ -26,13 +25,9 @@ public class Exercise001 {
 
     public String reverse(String sentence) {
 
-        String invertedString = "";
+        StringBuilder invertedString = new StringBuilder(sentence);
 
-        for (int i = sentence.length() - 1; i >= 0; i--) {
-            invertedString = invertedString + sentence.charAt(i);
-        }
-
-        return invertedString;
+        return invertedString.reverse().toString();
     }
 
     public int countLinuxUsers(List<User> users) {

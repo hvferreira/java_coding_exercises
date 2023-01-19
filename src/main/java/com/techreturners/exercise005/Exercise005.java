@@ -1,15 +1,15 @@
 package com.techreturners.exercise005;
 
-import java.awt.*;
-import java.util.ArrayList;
+
 import java.util.HashMap;
 
 public class Exercise005 {
 
+    private static final int ALPHABET_LETTER_COUNT = 26;
+    
     public boolean isPangram(String input) {
 
 
-        //ArrayList letter = new ArrayList<>();
         HashMap<Character, Character> letter = new HashMap<>();
         input = input.toLowerCase();
 
@@ -17,8 +17,7 @@ public class Exercise005 {
 
             if (((input.charAt(i) >= 'a') && (input.charAt(i) <= 'z'))) {
                 if (!letter.containsKey(input.charAt(i)))
-                    //if (!letter.contains(input.charAt(i)))
-                    // letter.add(input.charAt(i));
+
                     letter.put(input.charAt(i), input.charAt(i));
 
             }

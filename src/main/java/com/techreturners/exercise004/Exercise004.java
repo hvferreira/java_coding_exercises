@@ -1,13 +1,9 @@
 package com.techreturners.exercise004;
 
 
-import java.text.DateFormatSymbols;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Month;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-import java.util.Date;
+
 
 public class Exercise004 {
 
@@ -15,7 +11,6 @@ public class Exercise004 {
 
     public Exercise004(LocalDate date) {
         this.date = date.atStartOfDay();
-
     }
 
     public Exercise004(LocalDateTime dateTime) {
